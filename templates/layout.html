@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Google App Engine Template</title>
+        <link href="/www/css/style.css" type="text/css" rel="stylesheet"> 
+        <link rel="shortcut icon" href="/www/images/favicon.ico">
+        <script type="text/javascript" src="/www/js/jquery.js"></script>
+        <script type="text/javascript" src="/www/js/jquery-ui.js"></script>
+        <script type="text/javascript" src="/www/js/app.js"></script>
+    </head>
+
+    <body>
+        <div id="login">
+            {% if user %}
+            <span class="item nickname">{{ user.nickname }}</span> |
+            <span class="item"><a href="{{ logout_url|escape }}">Sign out</a></span>
+            {% else %}
+            <span class="item"><a href="{{ login_url|escape }}">Sign in</a></span>
+            {% endif %}
+        </div>
+        <div id="container">
+            {% block content %}default{% endblock %}
+        </div>
+    </body>
+
+</html>

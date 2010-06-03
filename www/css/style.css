@@ -1,0 +1,41 @@
+html { 
+    /*
+    font:2em/1.2 Arial, sans-serif;
+    */
+    font:100% Arial, sans-serif;
+}
+
+body { 
+}
+
+a { 
+}
+
+a:visited {
+    text-decoration:none; 
+}
+
+a:hover { 
+    color:#090;
+}
+
+div#container {
+    margin:20px auto; 
+    max-width:720px; 
+}
+
+label {
+    display: block;
+}
+
+dt {
+    float: left;
+    max-width: 80px;
+}
+
+dd {
+    margin-left: 90px;
+    padding: 10px;
+    background-color: #eee;
+    margin-bottom: 12px;
+}
